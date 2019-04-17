@@ -11,10 +11,10 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: 'us-east-1'
-  name: 'docker'
-  env: 'Docker-env'
+  name: 'docker-tests'
+  env: 'DockerTests-env'
   bucket_name: 'elasticbeanstalk-us-east-1-771804787499'
-  bucket_path: 'docker'
+  bucket_path: 'docker-tests'
   on:
     branch: master
   access_key_id: 
