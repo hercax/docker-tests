@@ -7,8 +7,6 @@ before_install:
 
 script:
   - docker run hercax/docker-react npm run test -- --coverage
-  - docker build -t hercax/docker-react-prod .
-  - docker run hercax/docker-react-prod
 
 deploy:
   provider: elasticbeanstalk
